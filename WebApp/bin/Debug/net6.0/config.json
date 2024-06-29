@@ -1,0 +1,11 @@
+{
+  "DbUserId": "sa",
+  "DbPassword": "P@ssw0rd.",
+  "DbServer": ".",
+  "DbPort": "",
+  "Dbname": "EduChat",
+  "ApiUrl": "http://localhost:5149/",
+  "EncryptionKey": "rOgd1rzsp0NHjBMn2jrPGv3I+Qu3NvMN7kX+ck1KI8Mz1/LojRUqPpv/Rb8JVxDNN5wIrijKw31edeWKVDRMLNZjfEGBE3KCVGwvJBZg99U=",
+  "SettingUserName": "admin",
+  "SettingPassword": "EHsy2boNaxAf9LvamhgK7w=="
+}

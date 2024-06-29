@@ -1,0 +1,12 @@
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\bin\Debug\net6.0\Web.Data.deps.json
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\bin\Debug\net6.0\Web.Data.dll
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\bin\Debug\net6.0\Web.Data.pdb
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.csproj.AssemblyReference.cache
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.AssemblyInfoInputs.cache
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.AssemblyInfo.cs
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.csproj.CoreCompileInputs.cache
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.dll
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\refint\Web.Data.dll
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\Web.Data.pdb
+C:\Users\ujama\OneDrive\Desktop\Jamal\Source\Web.Data\obj\Debug\net6.0\ref\Web.Data.dll

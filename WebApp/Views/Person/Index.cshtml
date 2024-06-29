@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Web.Data.Models.Database.Person>
+
+@{
+    ViewData["Title"] = "Person";
+    Layout = "_LayoutLTE";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Person</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
+                    <li class="breadcrumb-item active">Person</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h3 class="card-title">Person</h3>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>@Html.DisplayNameFor(model => model.FirstName)</th>
+                                    <th>@Html.DisplayNameFor(model => model.LastName)</th>
+                                    <th>@Html.DisplayNameFor(model => model.Age)</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @{
+                                    foreach (var m in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => m.FirstName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => m.LastName)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => m.Age)
+                                            </td>
+                                            <td class="table-action" data-url-delete="@Url.RouteUrl(new { action = "delete", controller = "person", area = "" })/@m.Id"
+                                                data-url-back="@Url.RouteUrl(new { action = "index", controller = "person", area = "" })">
+                                                <a class="ml-0" asp-action="edit" asp-controller="person" asp-area="" asp-route-id="@m.Id" data-rel="tooltip" title="Edit">
+                                                    <span><i class="fa fa-edit"></i></span>
+                                                </a>
+                                                <a class="ml-2" href="javascript:void(0);" onclick="callDelete(this)" data-rel="tooltip" title="Hapus">
+                                                    <span><i class="fa fa-trash"></i></span>
+                                                </a>
+                                            </td>
+
+                                        </tr>
+                                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                        <a asp-action="Add" asp-controller="Person" role="button" class="btn btn-primary mt-4">Add New</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

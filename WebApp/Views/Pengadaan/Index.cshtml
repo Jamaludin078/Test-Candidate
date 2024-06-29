@@ -1,0 +1,84 @@
+﻿@model IEnumerable<Web.Data.Models.Database.PengadaanHeader>
+
+@{
+	ViewData["Title"] = "Pengadaan";
+	Layout = "_LayoutLTE";
+}
+
+<section class="content-header">
+	<div class="container-fluid">
+		<div class="row mb-2">
+			<div class="col-sm-6">
+				@*<h1>Kategori</h1>*@
+			</div>
+			<div class="col-sm-6">
+				<ol class="breadcrumb float-sm-right">
+					<li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
+					<li class="breadcrumb-item active">Pengadaan</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="card card-primary">
+					<div class="card-header">
+						<h3 class="card-title">Pengadaan</h3>
+						<div class="card-tools">
+							<button type="button" class="btn btn-tool" data-card-widget="collapse">
+								<i class="fas fa-minus"></i>
+							</button>
+						</div>
+					</div>
+					<!-- /.card-header -->
+					<div class="card-body">
+						<table id="example2" class="table table-bordered table-hover">
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>@Html.DisplayNameFor(model => model.pengadaan_no)</th>
+									<th>@Html.DisplayNameFor(model => model.pengadaan_name)</th>
+									<th>@Html.DisplayNameFor(model => model.nama_kategori)</th>
+									@*<th>@Html.DisplayNameFor(model => model.LastName)</th>
+									<th>@Html.DisplayNameFor(model => model.Age)</th>*@
+									<th>Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								@{
+									int num = 1;
+									foreach (var m in Model)
+									{
+										<tr>
+											<td>@num</td>
+											<td>@Html.DisplayFor(modelItem => m.pengadaan_no)</td>
+											<td>@Html.DisplayFor(modelItem => m.pengadaan_name)</td>
+											<td>
+												@Html.DisplayFor(modelItem => m.nama_kategori)
+											</td>
+											<td>
+												<a class="ml-4" asp-action="view" asp-controller="pengadaan" asp-area="" asp-route-id="@m.pengadaan_no" data-rel="tooltip" title="View">
+													<span><i class="fa fa-eyes"></i></span> View
+												</a>
+											</td>
+
+										</tr>
+										num++;
+									}
+								}
+							</tbody>
+						</table>
+					</div>
+					<!-- /.card-body -->
+					<div class="card-footer">
+						<a asp-action="Add" asp-controller="Pengadaan" role="button" class="btn btn-primary mt-4">Add New</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
