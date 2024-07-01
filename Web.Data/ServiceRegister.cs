@@ -13,10 +13,8 @@ namespace Web.Data
 	{
 		public static void RegisterDbService(this IServiceCollection services, IConfiguration configuration)
 		{
-			services.AddScoped<IPersonService, PersonService>();
 			services.AddScoped<IKategoriService, KategoriService>();
 			services.AddScoped<IPengadaanService, PengadaanService>();
-			services.AddScoped<IPermintaanService, PermintaanService>();
 		}
 	}
 }

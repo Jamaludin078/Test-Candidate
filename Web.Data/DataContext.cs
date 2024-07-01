@@ -34,11 +34,8 @@ namespace Web.Data
 			base.OnModelCreating(modelBuilder);
 		}
 
-		public DbSet<Person> Person { get; set; }
 		public DbSet<Kategori> Kategori { get; set; }
 		public DbSet<PengadaanHeader> PengadaanHeader { get; set; }
 		public DbSet<PengadaanDetail> PengadaanDetail { get; set; }
-		public DbSet<Permintaan> Permintaan { get; set; }
-		public DbSet<PermintaanDetail> PermintaanDetail { get; set; }
 	}
 }
